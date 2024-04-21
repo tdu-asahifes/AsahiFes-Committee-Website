@@ -24,27 +24,27 @@ window.onload = function(){
           '<li class="nav-item border-start border-end px-4 py-1">'+
             '<a class="nav-link" style="color: #2d56a0;" href="news.html">ニュース</a>'+
           '</li>'+
-          '<li class="nav-item border-start border-end px-4 py-1">'+
-            '<a class="nav-link" style="color: #2d56a0;" href="event.html">企画</a>'+
-          '</li>'+
-          '<li class="nav-item border-start border-end px-4 py-1">'+
-            '<a class="nav-link" style="color: #2d56a0;" href="organization.html">参加団体</a>'+
-          '</li>'+
+          // '<li class="nav-item border-start border-end px-4 py-1">'+
+          //   '<a class="nav-link" style="color: #2d56a0;" href="event.html">企画</a>'+
+          // '</li>'+
+          // '<li class="nav-item border-start border-end px-4 py-1">'+
+          //   '<a class="nav-link" style="color: #2d56a0;" href="organization.html">参加団体</a>'+
+          // '</li>'+
           '<li class="nav-item border-start border-end px-4 py-1">'+
             '<a class="nav-link" style="color: #2d56a0;" href="access.html">アクセス・キャンパスマップ</a>'+
           '</li>'+
           '<li class="nav-item border-start border-end px-4 py-1">'+
-            '<a class="nav-link" style="color: #2d56a0;" href="question.html">ご来場の皆様へ</a>'+
+            '<a class="nav-link" style="color: #2d56a0;" href="question.html">お問い合わせ</a>'+
           '</li>'+
           '<li class="nav-item border-start border-end px-3">'+
             
             '<div class="dropdown">'+
               '<a class="nav-link dropdown-toggle py-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="color: #2d56a0;">特設サイト</a>'+
               '<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">'+
-                '<li><a class="dropdown-item" href="/access/tokyo_senju.html">新入生歓迎特設サイト</a></li>'+
-                '<li><a class="dropdown-item" href="/access/saitama_hatoyama.html">旭祭本祭</a></li>'+
+                '<li><a class="dropdown-item" href="/access/tokyo_senju.html">新入生歓迎サイト</a></li>'+
+                '<li><a class="dropdown-item" href="/access/saitama_hatoyama.html">2023旭祭本祭期間サイト</a></li>'+
                 '<li><a class="dropdown-item" href="/access/saitama_hatoyama.html">過去アーカイブ</a></li>'+
-                '<li><a class="dropdown-item" href="/access/saitama_hatoyama.html#schoolbus">&nbsp;-&nbsp;スクールバスのご案内</a></li>'+
+                // '<li><a class="dropdown-item" href="/access/saitama_hatoyama.html#schoolbus">&nbsp;-&nbsp;スクールバスのご案内</a></li>'+
               '</ul>'+
             '</div>'+
           '</li>'+
