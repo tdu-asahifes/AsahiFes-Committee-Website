@@ -1,107 +1,77 @@
 
-body{
+body {
     background-color: rgba(1, 12, 30, 0.2);
 }
+
 .rounded-image {
     border-radius: 50%;
     cursor: pointer;
 }
 
-.nav-hov :hover{
+.nav-hov :hover {
     border-bottom: #2d56a0 3px solid;
 }
-.fixed-top{
-    position: fixed; /* 画面上部に固定 */
-    width: 100%; /* 幅を100%に設定 */
-    top: 0; /* 上端に固定 */
-    z-index: 1000; /* 他の要素よりも手前に表示 */
-}
-.z{
-    z-index: 10000;
+
+.fixed-top {
+    position: fixed;
+    /* 画面上部に固定 */
+    width: 100%;
+    /* 幅を100%に設定 */
+    top: 0;
+    /* 上端に固定 */
+    z-index: 1000;
+    /* 他の要素よりも手前に表示 */
 }
 
-.logo{
+.z {
+    z-index: 10000;
+    /*重要*/
+}
+
+.logo {
     width: 15%;
 }
 
 .transparent {
     background-color: transparent !important;
-    }
-
-input[type=checkbox] {
-    display: none;
 }
 
-.label {
-    border: 1px solid #006DD9;
-    border-radius: 5px;
-    height: fit-content;
-}
 
-input[type="checkbox"]:checked+.label {
-    background: #006DD9;
-    color: #ffffff;
-}
-
-.label:hover {
-    background-color: #E2EDF9;
-}
-
-.checkbox-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.blue{
+.blue {
     color: #2d56a0;
 }
 
-.text-with-bg {
-    position: relative;
-    display: inline-block;
-  }
-
-  .text-with-bg::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0; 
-    width: 100px; /* 背景画像の幅 */
-    height: 6rem;
-    background-image: url('../materials/primeparts.png'); /* 背景画像のURL */
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-  }
-
-  .rowrow {
+.rowrow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .colcol {
-    width: 13%; /* デフォルトは1列に */
+    width: 13%;
+    /* デフォルトは1列に */
 }
-.colcol :hover{
+
+.colcol :hover {
     width: 102%;
     opacity: 0.5;
 }
 
-.button{
+.button {
     width: 30%;
     margin: auto
 }
 
 @media (max-width: 576px) {
     .colcol {
-        width: 50%; /* スマートフォン幅以上の場合は2列に */
+        width: 50%;
+        /* スマートフォン幅以上の場合は2列に */
     }
-    .logo{
+
+    .logo {
         width: 30%;
     }
+
 }
 
 .carousel {
@@ -111,9 +81,9 @@ input[type="checkbox"]:checked+.label {
     scroll-behavior: smooth;
     padding: 1rem;
     z-index: 2;
-  }
-  
-  .box {
+}
+
+.box {
     flex: 0 0 auto;
     width: 250px;
     height: 187px;
@@ -124,4 +94,4 @@ input[type="checkbox"]:checked+.label {
     align-items: center;
     justify-content: center;
     font-size: 24px;
-  }
+}

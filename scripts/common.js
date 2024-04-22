@@ -24,12 +24,6 @@ window.onload = function(){
           '<li class="nav-item border-start border-end px-4 py-1">'+
             '<a class="nav-link" style="color: #2d56a0;" href="news.html">ニュース</a>'+
           '</li>'+
-          // '<li class="nav-item border-start border-end px-4 py-1">'+
-          //   '<a class="nav-link" style="color: #2d56a0;" href="event.html">企画</a>'+
-          // '</li>'+
-          // '<li class="nav-item border-start border-end px-4 py-1">'+
-          //   '<a class="nav-link" style="color: #2d56a0;" href="organization.html">参加団体</a>'+
-          // '</li>'+
           '<li class="nav-item border-start border-end px-4 py-1">'+
             '<a class="nav-link" style="color: #2d56a0;" href="access.html">アクセス・キャンパスマップ</a>'+
           '</li>'+
@@ -44,7 +38,6 @@ window.onload = function(){
                 '<li><a class="dropdown-item" href="/access/tokyo_senju.html">新入生歓迎サイト</a></li>'+
                 '<li><a class="dropdown-item" href="/access/saitama_hatoyama.html">2023旭祭本祭期間サイト</a></li>'+
                 '<li><a class="dropdown-item" href="/access/saitama_hatoyama.html">過去アーカイブ</a></li>'+
-                // '<li><a class="dropdown-item" href="/access/saitama_hatoyama.html#schoolbus">&nbsp;-&nbsp;スクールバスのご案内</a></li>'+
               '</ul>'+
             '</div>'+
           '</li>'+
@@ -63,43 +56,43 @@ window.onload = function(){
     var footer = document.getElementById('footer'); // 追加する部分を取得
     footer.innerHTML = footer_content; // innerHTMLでHTMLを追加
 
-    var aside_content = 
-    '<h2 class="text-center">最新情報</h2>'+
-          '<div class="list-group">'+
-            '<!-- お知らせ1 -->'+
-            '<a href="#" class="list-group-item list-group-item-action">'+
-              '<h6 class="mb-1">最新情報1</h6>'+
-              '<p class="mb-1">最新の情報がここに表示されます。</p>'+
-              '<small class="text-muted">更新日: 2024-02-15</small>'+
-            '</a>'+
-            '<!-- お知らせ2 -->'+
-            '<a href="#" class="list-group-item list-group-item-action">'+
-              '<h6 class="mb-1">ニュース2</h6>'+
-              '<p class="mb-1">ニュースの内容がここに表示されます。</p>'+
-              '<small class="text-muted">更新日: 2024-02-14</small>'+
-            '</a>'+
-            '<!-- お知らせ3 -->'+
-            '<a href="#" class="list-group-item list-group-item-action">'+
-              '<h6 class="mb-1">お知らせ3</h6>'+
-              '<p class="mb-1">お知らせの詳細がここに表示されます。</p>'+
-              '<small class="text-muted">更新日: 2024-02-13</small>'+
-            '</a>'+
-            '<a href="#" class="list-group-item list-group-item-action">'+
-              '<h6 class="mb-1">最新情報1</h6>'+
-              '<p class="mb-1">最新の情報がここに表示されます。</p>'+
-              '<small class="text-muted">更新日: 2024-02-15</small>'+
-            '</a>'+
-            '<!-- お知らせ2 -->'+
-            '<a href="#" class="list-group-item list-group-item-action">'+
-              '<h6 class="mb-1">ニュース2</h6>'+
-              '<p class="mb-1">ニュースの内容がここに表示されます。</p>'+
-              '<small class="text-muted">更新日: 2024-02-14</small>'+
-            '</a>'+
-            '<!-- 他のお知らせを追加 -->'+
-          '</div>'+
+    // var aside_content = 
+    // '<h2 class="text-center">最新情報</h2>'+
+    //       '<div class="list-group">'+
+    //         '<!-- お知らせ1 -->'+
+    //         '<a href="#" class="list-group-item list-group-item-action">'+
+    //           '<h6 class="mb-1">最新情報1</h6>'+
+    //           '<p class="mb-1">最新の情報がここに表示されます。</p>'+
+    //           '<small class="text-muted">更新日: 2024-02-15</small>'+
+    //         '</a>'+
+    //         '<!-- お知らせ2 -->'+
+    //         '<a href="#" class="list-group-item list-group-item-action">'+
+    //           '<h6 class="mb-1">ニュース2</h6>'+
+    //           '<p class="mb-1">ニュースの内容がここに表示されます。</p>'+
+    //           '<small class="text-muted">更新日: 2024-02-14</small>'+
+    //         '</a>'+
+    //         '<!-- お知らせ3 -->'+
+    //         '<a href="#" class="list-group-item list-group-item-action">'+
+    //           '<h6 class="mb-1">お知らせ3</h6>'+
+    //           '<p class="mb-1">お知らせの詳細がここに表示されます。</p>'+
+    //           '<small class="text-muted">更新日: 2024-02-13</small>'+
+    //         '</a>'+
+    //         '<a href="#" class="list-group-item list-group-item-action">'+
+    //           '<h6 class="mb-1">最新情報1</h6>'+
+    //           '<p class="mb-1">最新の情報がここに表示されます。</p>'+
+    //           '<small class="text-muted">更新日: 2024-02-15</small>'+
+    //         '</a>'+
+    //         '<!-- お知らせ2 -->'+
+    //         '<a href="#" class="list-group-item list-group-item-action">'+
+    //           '<h6 class="mb-1">ニュース2</h6>'+
+    //           '<p class="mb-1">ニュースの内容がここに表示されます。</p>'+
+    //           '<small class="text-muted">更新日: 2024-02-14</small>'+
+    //         '</a>'+
+    //         '<!-- 他のお知らせを追加 -->'+
+    //       '</div>'+
 
-          '<h3>SNS</h3>'+
-          'インスタ、ツイッター、ユーチューブのアイコン３つ';
-    var aside = document.getElementById('aside');
-    aside.innerHTML = aside_content;
+    //       '<h3>SNS</h3>'+
+    //       'インスタ、ツイッター、ユーチューブのアイコン３つ';
+    // var aside = document.getElementById('aside');
+    // aside.innerHTML = aside_content;
 }
