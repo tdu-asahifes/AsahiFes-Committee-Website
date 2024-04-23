@@ -7,21 +7,21 @@
   <!-- Bootstrap JS (including Popper.js) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
   <script>
-      let prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-          let currentScrollPos = window.pageYOffset;
-          let menuBar = document.getElementById("bar");
-          if (prevScrollpos > currentScrollPos) {
-            // 上にスクロールした場合、メニューバーを表示
-            menuBar.style.transition = "top 0.5s ease-in-out";
-            menuBar.style.top = "0";
-          } else {
-            // 下にスクロールした場合、メニューバーを非表示
-            menuBar.style.transition = "top 0.5s ease-in-out";
-            menuBar.style.top = "-180px"; // 任意の値に変更可能
-          }
-          prevScrollpos = currentScrollPos;
-        }
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      let currentScrollPos = window.pageYOffset;
+      let menuBar = document.getElementById("bar");
+      if (prevScrollpos > currentScrollPos) {
+        // 上にスクロールした場合、メニューバーを表示
+        menuBar.style.transition = "top 0.5s ease-in-out";
+        menuBar.style.top = "0";
+      } else {
+        // 下にスクロールした場合、メニューバーを非表示
+        menuBar.style.transition = "top 0.5s ease-in-out";
+        menuBar.style.top = "-180px"; // 任意の値に変更可能
+      }
+      prevScrollpos = currentScrollPos;
+    }
   </script>
 </head>
 
@@ -79,9 +79,11 @@
           <div class="container mb-5">
             <div class="text-center mb-5">
               <!-- First Modal Trigger -->
-              <img src="https://via.placeholder.com/150" alt="Profile 1" class="rounded-image">
+              <div class="colcol mx-auto" onclick="openModal('modal1')"><img src="https://via.placeholder.com/150"
+                  alt="Profile 1" class="rounded-image"></div>
               <!-- Second Modal Trigger -->
-              <img src="https://via.placeholder.com/150" alt="Profile 2" class="rounded-image">
+              <div class="colcol mx-auto" onclick="openModal('modal2')"><img src="https://via.placeholder.com/150"
+                  alt="Profile 2" class="rounded-image"></div>
             </div>
           </div>
 
@@ -89,14 +91,18 @@
           <h2 class="text-center mt-5 py-5" id="asahi">組織紹介</h2>
           <div class="container my-5">
             <div class="mx-auto mb-5 rowrow">
-              <a href="" class="colcol" onclick="ModalOpen()"><img src="https://via.placeholder.com/200" alt="" width="90%"></a>
-              <a href="" class="colcol" onclick="ModalOpen()"><img src="https://via.placeholder.com/200" alt="" width="90%"></a>
-              <a href="" class="colcol" onclick="ModalOpen()"><img src="https://via.placeholder.com/200" alt="" width="90%"></a>
-              <a href="" class="colcol" onclick="ModalOpen()"><img src="https://via.placeholder.com/200" alt="" width="90%"></a>
-              <a href="" class="colcol" onclick="ModalOpen()"><img src="https://via.placeholder.com/200" alt="" width="90%"></a>
+              <div class="colcol" onclick="openModal('modal3')"><img src="https://via.placeholder.com/200" alt=""
+                  width="90%"></div>
+              <div class="colcol" onclick="openModal('modal4')"><img src="https://via.placeholder.com/200" alt=""
+                  width="90%"></div>
+              <div class="colcol" onclick="openModal('modal5')"><img src="https://via.placeholder.com/200" alt=""
+                  width="90%"></div>
+              <div class="colcol" onclick="openModal('modal6')"><img src="https://via.placeholder.com/200" alt=""
+                  width="90%"></div>
+              <div class="colcol" onclick="openModal('modal7')"><img src="https://via.placeholder.com/200" alt=""
+                  width="90%"></div>
             </div>
           </div>
-          
 
         </div>
       </article>
@@ -104,10 +110,192 @@
     </div>
   </div>
 
+  <!--委員長挨拶モーダル-->
+
+  <div class="modalbg" id="modalbg1">
+    <div class="modal" id="modal1">
+      <img src="https://via.placeholder.com/200" width="20%" alt="集合写真" style="filter: blur(1px);">
+      <h3>一部委員長</h3>
+      <div class="greetcontents">
+        <div class="text-center">
+          第13回1部旭祭実行委員会委員長の澤岡愛瑠です。
+          11月に開催される学祭に向け委員会メンバーと協力しながら活動しています。
+          旭祭実行委員会の所属数は大学で一番多いです！！
+          友達を作りたい、先輩、後輩と仲良くなりたいと考えてる人も大歓迎です。
+          冬合宿や夏合宿などのイベントもあります！
+          大学生活で楽しい思い出を作りたい人はぜひ「旭祭実行委員会」に来てください！<br>   
+        </div>
+      </div>
+      <button calss="mb-4" onclick="closeModal('modal1')">close</button>
+    </div>
+  </div>
+
+  <div class="modalbg" id="modalbg2">
+    <div class="modal" id="modal2">
+      <img src="https://via.placeholder.com/200" width="20%" alt="集合写真" style="filter: blur(1px);">
+      <h3>二部委員長</h3>
+      <div class="greetcontents">
+        <div class="text-center">
+          第十三回二部旭祭実行委員会委員長の小野田蓮です。
+          一部と合同で活動できる二部団体は旭祭実行委員だけ！友達たくさん作りたい人大歓迎です！
+          旭祭はとても大きなイベントです。その運営をするため様々な役職があるのであなたにぴったりな仕事も必ずあります！
+          ぜひあなたも参加しませんか？<br>
+        </div>
+      </div>
+      <button calss="mb-4" onclick="closeModal('modal2')">close</button>
+    </div>
+  </div>
+
+
+  <!--組織紹介部分モーダル-->
+
+  <div class="modalbg" id="modalbg3">
+    <div class="modal" id="modal3">
+      <img src="https://via.placeholder.com/200" width="20%" alt="集合写真" style="filter: blur(1px);">
+      <h3>企画局</h3>
+      <div class="greetcontents">
+        <div class="text-center">
+          みんなの理想の文化祭を考えてそれを実際に行動に移す実行部隊です！
+          好きな芸能人、アーティストはいますか？
+          やってみたい大学生ならではのイベントや企画はありませんか？
+          企画局では「楽しい」を追い求める人をいつでも募集しています！
+          あなたと会える日をお待ちしております！<br>
+          <div class="decoframe">
+            <div class="greetcontents">
+              <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
+              <div class="text-center">
+                <h3>企画局長</h3>
+                第13回旭祭企画局長の杉山惠亮です!
+                好きなことは旅行と食べること。
+                中でも甘いものには目がありません！
+                最高の思い出をつくりましょー！
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button calss="mb-4" onclick="closeModal('modal3')">close</button>
+    </div>
+  </div>
+
+  <div class="modalbg" id="modalbg4">
+    <div class="modal" id="modal4">
+      <img src="https://via.placeholder.com/200" width="20%" alt="集合写真" style="filter: blur(1px);">
+      <h3>広報局</h3>
+      <div class="greetcontents">
+        <div class="text-center">
+          広報局は主に旭祭の宣伝と装飾を行います。業務内容はポスター・パンフレット・webページ制作、SNS運用（Twitter、Instagram）、装飾（ステージ・看板・横断幕・階段等）、協賛企業企画などです。春から動く仕事もあれば夏から動く仕事もあります。またIllustratorなどソフトを使う仕事もありますが初心者でもすぐに使えるようになるので挑戦してみたい人はぜひ！
+          広報局の魅力は「みんなで作業する」こととどれも形に残り「やりがい」があることです。
+          暖かい雰囲気です！ぜひ広報局に参加してください！！<br>
+          <div class="decoframe">
+            <div class="greetcontents">
+              <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
+              <div class="text-center">
+                <h3>広報局長</h3>
+                第13回旭祭広報局長の三島太作です。
+                ご入学おめでとうございます！
+                ぜひ、仲良くしましょうー！
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button calss="mb-4" onclick="closeModal('modal4')">close</button>
+    </div>
+  </div>
+
+  <div class="modalbg" id="modalbg5">
+    <div class="modal" id="modal5">
+      <img src="https://via.placeholder.com/200" width="20%" alt="集合写真" style="filter: blur(1px);">
+      <h3>総務局</h3>
+      <div class="greetcontents">
+        <div class="text-center">
+          総務局は委員会での役割はいわゆる生徒会に近いです。書類仕事や団体とのやりとりをこなしていくことが多く、局全体で仕事をしたりするので恐らく委員会内で一番仲が良い局だと思います！
+          大人数でワイワイして、なおかつ縁の下の力持ちのような役割が好き！って人は是非総務局にいらしてください！<br>
+          <div class="decoframe">
+            <div class="greetcontents">
+              <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
+              <div class="text-center">
+                <h3>総務局長</h3>
+                総務局長の平田純也です！
+                おしゃべりとゲームと運動めちゃ好き！
+                あと美味しいご飯を食べること！
+                よろしくね！
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button calss="mb-4" onclick="closeModal('modal5')">close</button>
+    </div>
+  </div>
+
+  <div class="modalbg" id="modalbg6">
+    <div class="modal" id="modal6">
+      <img src="https://via.placeholder.com/200" width="20%" alt="集合写真" style="filter: blur(1px);">
+      <h3>渉外局</h3>
+      <div class="greetcontents">
+        <div class="text-center">
+          4局の中で1番所属人数が多いのがこの渉外局です！！
+          渉外局は合宿の運営や、企業と連絡を取って協賛を頂いたり、四工大で協力して学園祭を盛り上げたり…と、外部との関わりを多く持てることが特徴です！旭祭当日には屋台も運営しちゃいます！！
+          また、旭祭でみんなが着るスタジャンの発注とデザインも担当していますので興味がある方はぜひ！！
+          大人になっても役に立つ経験がたくさん積めます！
+          渉外局でお待ちしてます！！！<br>
+          <div class="decoframe">
+            <div class="greetcontents">
+              <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
+              <div class="text-center">
+                <h3>渉外局長</h3>
+                渉外局長の井上大樹です！
+                最高のメンバーと一緒に最高の旭祭をつくりあげてこ~！
+                みんな待ってるよ~！
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button calss="mb-4" onclick="closeModal('modal6')">close</button>
+    </div>
+  </div>
+
+  <div class="modalbg" id="modalbg7">
+    <div class="modal" id="modal7">
+      <h2>二部旭祭実行委員会</h2>
+      <div class="decoframe greetcontents">
+        <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
+        <div class="text-center">
+          <h3>二部総務局長</h3>
+          みなさんこんにちは二部総務局長のりあむです。
+          総務局では一部と連携をとり仕事を行なって行きます。なので、一部との関わり合いがとても多く二部だけにはとどまらず一部の方とも仲良くなれます。
+          不甲斐ない局長だと思いますが、全力で頑張るのでよろしくお願いします。
+        </div>
+      </div>
+      <div class="decoframe greetcontents">
+        <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
+        <div class="text-center">
+          <h3>二部企画局長</h3>
+          第13回旭祭二部企画局長の宮野鉄平です！
+          旭祭では、一部二部の学生関係なく大学全体が活発になる大イベントです！
+          そんな旭祭をより円滑に問題なく、来てよかったと思ってもらえるように、企画局長として頑張ります！<br>
+          二部企画局では一部の企画局と連携して好きな芸能人、アーティストなどのトークショーを運営しています。
+          また、旭祭をより楽しむために食べ物の屋台をしたりなど、運営してる側も楽しくなるように活動しています。
+          一緒に楽しい思い出を作りませんか？？
+          興味のある方はぜひ企画局に参加してください！！
+        </div>
+      </div>
+      <button calss="mb-4" onclick="closeModal('modal7')">close</button>
+    </div>
+  </div>
+
 
   <!-- フッター -->
   <footer id="footer"></footer>
   <script src="scripts/common.js"></script>
+  <script src="scripts/button.js"></script>
 
 </body>
 
