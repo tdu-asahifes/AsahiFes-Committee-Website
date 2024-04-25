@@ -51,7 +51,7 @@ window.onload = function(){
 
     // footer 
     var footer_content = '<footer class="text-white text-center py-5" style="background-color: #555555;">'+
-    '<p>&copy; 2024 学園祭実行委員会. All Rights Reserved.</p>'+
+    '<p>&copy; 2024 東京電機大学旭祭実行委員会. All Rights Reserved.</p>'+
     '</footer>'; // 追加するHTMLを定義
     var footer = document.getElementById('footer'); // 追加する部分を取得
     footer.innerHTML = footer_content; // innerHTMLでHTMLを追加

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--個人的な意見としては、写真の多めのスタイリッシュなサイトが良いかなって思っています-->
 <html lang="ja">
 
 <head>
@@ -37,9 +36,9 @@
     <div class="row">
       <img src="materials/asahi-top.jpg" alt="img" class="mt-2 mb-5">
       <!-- メインコンテンツ (article) -->
-      <article class="col-md-12 text-center my-5">
+      <article class="col-md-12 text-center mt-5">
 
-        <h2 class="text-center mb-5">おすすめ企画</h2>
+        <h2 class="text-center mb-5">~おすすめ企画~</h2>
         <div class="container my-5">
           <div class="row">
             <div class="carousel mb-5">
@@ -57,7 +56,7 @@
           </div>
         </div>
 
-        <h2 class="my-5">サイト内リンク</h2><br>
+        <h2 class="my-5">~サイト内リンク~</h2><br>
         <div class="mx-auto mb-5 rowrow">
           <a href="#asahi" class="colcol"><img src="materials/icon-1.png" alt="" width="90%"></a>
           <a href="news.html" class="colcol"><img src="materials/icon-2.png" alt="" width="90%"></a>
@@ -67,14 +66,14 @@
 
         <div class="container pt-5">
 
-          <h2 class="text-center mb-5" id="asahi">旭祭</h2>
+          <h2 class="text-center mb-5" id="asahi">~旭祭~</h2>
           <p class="text-center mx-auto my-5">
             旭祭は、北千住にキャンパスが移転した2012年に始まり、今年で13回目を迎えます。<br>毎年約10000人が来場し、声優やお笑い芸人によるライブ、学生団体による屋台や展示など様々な企画で盛り上がっています。<br>旭祭実行委員会は「旭祭」の企画運営を行っている団体です。
           </p>
-          <img src="materials/kuruton.png" width="10%" class="me-0">
+          <img src="materials/kuruton.png" width="10%">
           
 
-          <h2 class="text-center my-5 mt-5">委員長挨拶</h2>
+          <h2 class="text-center my-5 mt-5">~委員長挨拶~</h2>
           <div class="container mb-5">
             <div class="text-center mb-5">
               <!-- First Modal Trigger -->
@@ -85,23 +84,51 @@
           </div>
 
 
-          <h2 class="text-center mt-5 py-5" id="asahi">組織紹介</h2>
-          <div class="container my-5">
-            <div class="mx-auto mb-5 rowrow">
-              <div class="colcol" onclick="openModal('modal3')"><img src="materials/members/kikaku.png" alt=""
-                  width="100%"></div>
-              <div class="colcol" onclick="openModal('modal4')"><img src="materials/members/kouhou.png" alt=""
-                  width="100%"></div>
-              <div class="colcol" onclick="openModal('modal5')"><img src="materials/members/soumu.png" alt=""
-                  width="100%"></div>
-              <div class="colcol" onclick="openModal('modal6')"><img src="materials/members/shougai.png" alt=""
-                  width="100%"></div>
-              <div class="colcol" onclick="openModal('modal7')"><img src="materials/members/nibu.png" alt=""
-                  width="100%"></div>
+          <h2 class="text-center mt-5 py-5" id="asahi">~組織紹介~</h2>
+          <div class="container my-5 pb-5">
+            <div class="container pb-5">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 custom-grid">
+                <div class="col mt-2" onclick="openModal('modal3')">
+                  <img src="materials/members/kikaku.png" alt="" class="img-fluid">
+                </div>
+                <div class="col mt-2" onclick="openModal('modal4')">
+                  <img src="materials/members/kouhou.png" alt="" class="img-fluid">
+                </div>
+                <div class="col mt-2" onclick="openModal('modal5')">
+                  <img src="materials/members/soumu.png" alt="" class="img-fluid">
+                </div>
+                <div class="col mt-2" onclick="openModal('modal6')">
+                  <img src="materials/members/shougai.png" alt="" class="img-fluid">
+                </div>
+                <div class="col mt-2" onclick="openModal('modal7')">
+                  <img src="materials/members/nibu.png" alt="" class="img-fluid">
+                </div>
+                <div class="col mt-2 pt-4"><img src="materials/kuruton.png" alt="kuruton" width="50%" ><br>旭祭公式キャラクター<br>「クルトン」</div>
+              </div>
             </div>
+
           </div>
 
         </div>
+
+        <div class="d-demo mt-5 mb-0">
+          <div class="d-demo__wrap">
+              <ul class="d-demo__list d-demo__list--left">
+                  <li class="d-demo__item"><img src="materials/event-pictures/natu.jpg" alt></li>
+                  <li class="d-demo__item"><img src="materials/event-pictures/ski.jpg" alt></li>
+                  <li class="d-demo__item"><img src="materials/event-pictures/summer.png" alt></li>
+                  <li class="d-demo__item"><img src="materials/event-pictures/winter.png" alt></li>
+                  <li class="d-demo__item"><img src="materials/asahi-top.jpg" alt></li>
+               </ul>
+               <ul class="d-demo__list d-demo__list--left">
+                <li class="d-demo__item"><img src="materials/event-pictures/natu.jpg" alt></li>
+                <li class="d-demo__item"><img src="materials/event-pictures/ski.jpg" alt></li>
+                <li class="d-demo__item"><img src="materials/event-pictures/summer.png" alt></li>
+                <li class="d-demo__item"><img src="materials/event-pictures/winter.png" alt></li>
+                <li class="d-demo__item"><img src="materials/asahi-top.jpg" alt></li>
+               </ul>
+          </div>
+       </div>
       </article>
 
     </div>
@@ -156,19 +183,7 @@
           好きな芸能人、アーティストはいますか？
           やってみたい大学生ならではのイベントや企画はありませんか？
           企画局では「楽しい」を追い求める人をいつでも募集しています！
-          あなたと会える日をお待ちしております！<br>
-          <div class="decoframe">
-            <div class="greetcontents">
-              <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
-              <div class="text-center">
-                <h3>企画局長</h3>
-                第13回旭祭企画局長の杉山惠亮です!
-                好きなことは旅行と食べること。
-                中でも甘いものには目がありません！
-                最高の思い出をつくりましょー！
-              </div>
-            </div>
-          </div>
+          あなたと会える日をお待ちしております！<br>        
 
         </div>
       </div>
@@ -185,18 +200,7 @@
           広報局は主に旭祭の宣伝と装飾を行います。業務内容はポスター・パンフレット・webページ制作、SNS運用（Twitter、Instagram）、装飾（ステージ・看板・横断幕・階段等）、協賛企業企画などです。春から動く仕事もあれば夏から動く仕事もあります。またIllustratorなどソフトを使う仕事もありますが初心者でもすぐに使えるようになるので挑戦してみたい人はぜひ！
           広報局の魅力は「みんなで作業する」こととどれも形に残り「やりがい」があることです。
           暖かい雰囲気です！ぜひ広報局に参加してください！！<br>
-          <div class="decoframe">
-            <div class="greetcontents">
-              <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
-              <div class="text-center">
-                <h3>広報局長</h3>
-                第13回旭祭広報局長の三島太作です。
-                ご入学おめでとうございます！
-                ぜひ、仲良くしましょうー！
-              </div>
-            </div>
-          </div>
-
+          
         </div>
       </div>
       <button calss="mb-4" onclick="closeModal('modal4')">close</button>
@@ -211,19 +215,7 @@
         <div class="text-center">
           総務局は委員会での役割はいわゆる生徒会に近いです。書類仕事や団体とのやりとりをこなしていくことが多く、局全体で仕事をしたりするので恐らく委員会内で一番仲が良い局だと思います！
           大人数でワイワイして、なおかつ縁の下の力持ちのような役割が好き！って人は是非総務局にいらしてください！<br>
-          <div class="decoframe">
-            <div class="greetcontents">
-              <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
-              <div class="text-center">
-                <h3>総務局長</h3>
-                総務局長の平田純也です！
-                おしゃべりとゲームと運動めちゃ好き！
-                あと美味しいご飯を食べること！
-                よろしくね！
-              </div>
-            </div>
-          </div>
-
+          
         </div>
       </div>
       <button calss="mb-4" onclick="closeModal('modal5')">close</button>
@@ -241,18 +233,7 @@
           また、旭祭でみんなが着るスタジャンの発注とデザインも担当していますので興味がある方はぜひ！！
           大人になっても役に立つ経験がたくさん積めます！
           渉外局でお待ちしてます！！！<br>
-          <div class="decoframe">
-            <div class="greetcontents">
-              <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
-              <div class="text-center">
-                <h3>渉外局長</h3>
-                渉外局長の井上大樹です！
-                最高のメンバーと一緒に最高の旭祭をつくりあげてこ~！
-                みんな待ってるよ~！
-              </div>
-            </div>
-          </div>
-
+          
         </div>
       </div>
       <button calss="mb-4" onclick="closeModal('modal6')">close</button>
@@ -261,23 +242,10 @@
 
   <div class="modalbg" id="modalbg7">
     <div class="modal" id="modal7">
-      <h2>二部旭祭実行委員会</h2>
-      <div class="decoframe greetcontents">
-        <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
+      <img src="https://via.placeholder.com/200" width="20%" alt="集合写真" style="filter: blur(1px);">
+      <h3>二部旭祭実行委員会</h3>
+      <div class="">
         <div class="text-center">
-          <h3>二部総務局長</h3>
-          みなさんこんにちは二部総務局長のりあむです。
-          総務局では一部と連携をとり仕事を行なって行きます。なので、一部との関わり合いがとても多く二部だけにはとどまらず一部の方とも仲良くなれます。
-          不甲斐ない局長だと思いますが、全力で頑張るのでよろしくお願いします。
-        </div>
-      </div>
-      <div class="decoframe greetcontents">
-        <img src="https://via.placeholder.com/200" width="20%" alt="顔写真">
-        <div class="text-center">
-          <h3>二部企画局長</h3>
-          第13回旭祭二部企画局長の宮野鉄平です！
-          旭祭では、一部二部の学生関係なく大学全体が活発になる大イベントです！
-          そんな旭祭をより円滑に問題なく、来てよかったと思ってもらえるように、企画局長として頑張ります！<br>
           二部企画局では一部の企画局と連携して好きな芸能人、アーティストなどのトークショーを運営しています。
           また、旭祭をより楽しむために食べ物の屋台をしたりなど、運営してる側も楽しくなるように活動しています。
           一緒に楽しい思い出を作りませんか？？
@@ -287,7 +255,6 @@
       <button calss="mb-4" onclick="closeModal('modal7')">close</button>
     </div>
   </div>
-
 
   <!-- フッター -->
   <footer id="footer"></footer>
