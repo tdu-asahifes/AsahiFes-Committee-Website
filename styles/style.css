@@ -1,7 +1,12 @@
+@font-face {
+    font-family: "バナナフォント";
+    src: url("../materials/bananaslip_plus/bananaslip_plus/bananaslipplus.otf") format("opentype");
+  }
 
 body {
     /* background-color: rgba(1, 12, 30, 0.2); */
     background-color: rgb(236, 241, 244);
+    font-family: "バナナフォント";
 }
 
 .rounded-image {
@@ -71,13 +76,12 @@ body {
     width: 90%;
     height: 80%;
     transform: translate(-50%, -50%);
-    padding-top: 20px;
-    background-color: #fff;
+    padding-top: 3rem;
+    background-color: rgb(236, 241, 244);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     overflow-y: auto;
     border-radius: 10px;
-    padding-bottom:30px;
 }
 
 .modalbg {
@@ -133,15 +137,37 @@ body {
   }
   
   .d-demo__list--left{
-  animation :infinity-scroll-left 95s infinite linear 0.5s both;
+  animation :infinity-scroll-left 60s infinite linear 0.5s both;
   }
   
   .d-demo__item {
-    width: calc(100vw / 6);
+     width: calc(100vw / 5); 
   }
   .d-demo__item > img{
      width: 100%;
   }
+
+  .carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.box {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 137px;
+    margin-right: 1rem;
+    background-color: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
 
 @media (max-width: 576px) {
     .colcol {
@@ -160,26 +186,9 @@ body {
     .gazou2{
         width: 10%;
     }
+
+    .d-demo__item {
+        width: calc(100vw / 3); 
+     }
 }
 
-.carousel {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding: 1rem;
-    z-index: 2;
-}
-
-.box {
-    flex: 0 0 auto;
-    width: 250px;
-    height: 187px;
-    margin-right: 1rem;
-    background-color: none;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-}
