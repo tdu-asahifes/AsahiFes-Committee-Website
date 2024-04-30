@@ -37,6 +37,14 @@ head.insertAdjacentHTML('beforeEnd',
     '<meta property="og:site_name" content="東京電機大学旭祭実行委員会公式">'+
     '<META name="keywords" content="旭祭,東京電機大学,電大,tdu,東京電機大学学園祭,学園祭,文化祭,東京千住キャンパス,">'+
 
-    '<title>旭祭実行委員会公式ウェブサイト/東京電機大学東京千住キャンパス</title>'+
-    '<script src="scripts/specer.js"></script>'
+    '<script src="scripts/specer.js"></script>'+
+    
+    '<script async src="https://www.googletagmanager.com/gtag/js?id=G-47C8XLB4N6"></script>'+
+    '<script>'+
+       'window.dataLayer = window.dataLayer || [];'+
+        'function gtag() { dataLayer.push(arguments); }'+
+        "gtag('js', new Date());"+
+
+        "gtag('config', 'G-47C8XLB4N6');"+
+    '</script>'
 );
