@@ -135,6 +135,7 @@ body {
   .d-demo__wrap {
     display: flex;
     overflow: hidden;
+    background-color: #555555;
   }
   
   .d-demo__list {
