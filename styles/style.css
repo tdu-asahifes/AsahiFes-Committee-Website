@@ -179,6 +179,10 @@ body {
     font-size: 24px;
 }
 
+.delate-hover {
+    pointer-events: none;
+  }
+
 @media (max-width: 576px) {
     .colcol {
         width: 50%;

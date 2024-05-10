@@ -35,9 +35,9 @@ window.onload = function(){
             '<div class="dropdown">'+
               '<a class="nav-link dropdown-toggle py-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="color: #2d56a0;">特設サイト</a>'+
               '<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">'+
-                '<li><a class="dropdown-item" href="/access/tokyo_senju.html">新入生歓迎サイト</a></li>'+
-                '<li><a class="dropdown-item" href="/access/saitama_hatoyama.html">2023旭祭本祭期間サイト</a></li>'+
-                '<li><a class="dropdown-item" href="/access/saitama_hatoyama.html">過去アーカイブ</a></li>'+
+                '<li><a class="dropdown-item" href="https://www.sg.dendai.ac.jp/s1j-asahisai/archives/12th/main/">新入生歓迎サイト</a></li>'+
+                '<li><a class="dropdown-item" href="https://www.sg.dendai.ac.jp/s1j-asahisai/archives/13th/index.html">2023旭祭本祭期間サイト</a></li>'+
+                '<li><a class="dropdown-item" href="https://asahisai.notion.site/HP-4771789a7eb84bc18d46a4c449457aaa">過去アーカイブ</a></li>'+
               '</ul>'+
             '</div>'+
           '</li>'+
